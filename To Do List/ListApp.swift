@@ -14,10 +14,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct ListApp: App {
 	@UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+	@StateObject var authViewModel = AuthViewModel()
+	@StateObject var todoViewModel = TodoViewModel()
 	
 	var body: some Scene {
 		WindowGroup {
-			ContentView(viewModel: TodoViewModel())
+			ContentView(authViewModel: authViewModel, viewModel: todoViewModel)
 		}
 	}
 }

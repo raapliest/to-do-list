@@ -1,5 +1,7 @@
+import SwiftUI
+
 struct Previews: PreviewProvider {
 	static var previews: some View {
-		ContentView(viewModel: TodoViewModel())
+		ContentView(authViewModel: AuthViewModel(), viewModel: TodoViewModel())
 	}
 }

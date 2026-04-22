@@ -10,7 +10,6 @@ struct TodoRowView: View {
 	
 	var body: some View {
 		HStack {
-			// Checkbox
 			Button {
 				onToggle()
 			} label: {
@@ -18,7 +17,6 @@ struct TodoRowView: View {
 					.foregroundColor(todo.isCompleted ? .green : .gray)
 			}
 			
-			// Text / Edit mode
 			if isEditing {
 				TextField("Edit task", text: $editedText)
 					.onSubmit {
@@ -33,7 +31,6 @@ struct TodoRowView: View {
 			
 			Spacer()
 			
-			// Edit button
 			Button {
 				editedText = todo.title
 				isEditing.toggle()

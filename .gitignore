@@ -1,3 +1,7 @@
 .vscode/mcp.json
 /Users/a10/Documents/Vibecoding/Vibecoding/Rafly/To Do List/nothing/ios-development-1caf9-firebase-adminsdk-fbsvc-639a143efb.json
 node_modules
+.DS_Store
+firebase-mcp/serviceAccountKey.json
+firebase-mcp/
+*.xcuserstate
